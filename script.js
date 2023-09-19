@@ -32,9 +32,19 @@ function turnClick(square) {
 function turn(squareId, player) {
 	origBoard[squareId] = player;
 	document.getElementById(squareId).innerText = player;
+	let gameWon = checkWin(origBoard, player);
+	console.log(gameWon)
 }
 
 function checkWin(board, player) {
-    let plays = board.reduce()
+    // let plays = board.reduce((a, e, i) => (e === player) ? a.concat(i) : a, []);
+	
+	// for (let [index, win] of winCombos.entries()) {
+	// 	gameWon = {index: index, player: player};
+	// 	break
+	// }
+
+	// return gameWon;
+
 }
 
